@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SVG Willian Justen</title>
+  <link rel="stylesheet" href="css/svgcourse.css">
+</head>
+<body>
+    <h1>Fill e Stroke</h1>
+
+    <style>
+        .circle {
+            stroke: #000;
+            stroke-width: 5;
+        }
+
+        .circle-1 {
+            fill: #F00;
+            fill-opacity: .8;
+            stroke-dasharray: 10;
+        }
+
+        .circle-2 {
+            fill: #0F0;
+            fill-opacity: .6;
+            stroke-dasharray: 20 1;
+        }
+
+        .circle-3 {
+            fill: #00F;
+            fill-opacity: .4;
+            stroke-dasharray: 400;
+            stroke-dashoffset: 100;
+        }
+    </style>
+
+
+    <svg width="500" heigth="150" viewBox="0 0 500 150">
+        <circle class="circle circle-1"r="55" cx="200" cy="70"/>
+        <circle class="circle circle-2"r="55" cx="250" cy="70"/>
+        <circle class="circle circle-3"r="55" cx="300" cy="70"/>
+    </svg>
+
+</body>
+</html>

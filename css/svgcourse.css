@@ -1,0 +1,22 @@
+
+svg {
+  border: solid 1px red;
+}
+
+#star-external {
+    position: absolute;
+        fill: blue;
+        stroke: #000;
+        stroke-width: 5;
+        transition: 2s;
+        color: blue;
+    }
+
+#star-external:hover {
+    fill: #0F0;
+}
+
+.text {
+    font-size: 3em;
+    font-weight: bold;
+}

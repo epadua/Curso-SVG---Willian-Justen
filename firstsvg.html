@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first SVG</title>
+    <link rel="stylesheet" href="css/engine.css">
+</head>
+<body>
+    <h1>My First SVG</h1>
+
+<div id="engine" class="engine">
+    
+  <svg width="400" heigth="400" class="engine-rotate" viewBox="0 0 400 400">
+
+        <refs>
+            <polygon id="teeth" points="180,70 220,70 240,110 160,110" fill=""/>
+        </refs>
+
+      <circle class="engine-body" r="100" cx="200" cy="200" fill="#000"/>
+
+      <circle class="engine-middle" r="40" cx="200" cy="200" fill="#FFF"/>
+
+      <g class="engine-teeth">
+                              
+          <use xlink:href="#teeth" x="0" y="0"/>
+          <use xlink:href="#teeth" x="0" y="0" transform="rotate(60 200 200)"/>
+          <use xlink:href="#teeth" x="0" y="0" transform="rotate(120 200 200)"/>
+          <use xlink:href="#teeth" x="0" y="0" transform="rotate(180 200 200)"/>
+          <use xlink:href="#teeth" x="0" y="0" transform="rotate(240 200 200)"/>
+          <use xlink:href="#teeth" x="0" y="0" transform="rotate(300 200 200)"/>
+      </g>
+  </svg>
+
+</div>
+</body>
+</html>
